@@ -1,0 +1,378 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Tab Logo -->
+    <link rel="icon" href="{% static 'SpeedyRentalCircle.png' %}" type="image/gif" sizes="18x18">
+
+    <title>Speedy Rentals - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer.css' %}">
+    <script src="{% static 'js/customer.js' %}" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="font-size: larger;" aria-label="" aria-labbelledby="">
+        <a href="\"><img class="navbar-brand" src="{% static 'SpeedyRentalCircle.png' %}" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/" style="color: #f1f1f1;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}" style="color: #f1f1f1;">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}" style="color: #f1f1f1;">about us</a>
+                </li>
+               
+            </ul>
+
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'SignIn' %}" style="color: #f1f1f1;">Sign
+                    in</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> About Us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static '/SpeedyRentalCircle.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- Search Start -->
+<!-- Search End -->
+ <div class="container-fluid bg-white pt-3 px-lg-5">
+
+    </div>
+
+<!-- Page Header Start -->
+
+<div class="container-fluid page-header m-t-6">
+    <h1 class="display-3 text-uppercase text-white mb-3">About</h1>
+    <div class="d-inline-flex text-white">
+        <h6 class="text-body m-0 px-3">/</h6>
+        <h6 class="text-uppercase text-body m-0">About</h6>
+    </div>
+</div>
+<!-- Page Header Start -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span
+                class="text-primary">Speedy Rentals</span></h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+
+                <img class="w-75 mb-4" src="{% static 'img/about.png' %}" alt="About Speedy Rentals">
+                <h1 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">About Us</span></h1>
+                <p> Speedy Rentals is the best emerging car renting provider in Pakistan awarded at the 15th Consumer
+                    Choice Awards.
+                    <br>Speedy Rentals cars in the past was nothing less of a hassle. Traditional renting industry
+                    called for several rounds finding a car of your choice, inconsistent rates, and low quality
+                    assurance. Speedy Rental is the first on-demand car rental service that solves all these problems on a
+                    single platform.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h3 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">What we do</span></h3>
+                <p> Speedy Rental’s car-rental services are available at your fingertips online, for a more modern and
+                    convenient customer experience. Get the car you want, at the time you asked for.
+                    <br><br>
+                    Speedy Rental provides both on-demand and pre-scheduled vehicles for any situation, occasion or event, such
+                    as:</p>
+                <ul style="font-size: large;">
+                    <li>Corporate Office Staff</li>
+                    <li>Tours and Trips</li>
+                    <li>Weddings</li>
+                    <li>Families</li>
+                    <li>Individuals</li>
+                </ul>
+                One of the biggest strengths of Speedy Rentals is its versatility. Our wide-range of latest models and
+                well-maintained cars, is suited for everyone and all occasions.
+                <br><br>
+                With Speedy Rentals, you get what you want. We rent cars with a chauffeur as well as on a self drive basis.
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h3 class="display-4 text-uppercase text-center mb-5">Our mission <br><span class="text-primary" style="font-size: 20px">Car rental simplified </span></h3>
+                <p>Speedy Rentals was established with our primary focus on you, our customers. It all began with the notion of evolving the car-rental industry into a customer-centric and advanced solution with a fresh, honest approach.
+<br><br>
+When booking a hire vehicle, Speedy Rental aims to provide hand picked vehicles, trustworthy drivers, all at the convenience of your home.
+<br><br>
+At Speedy Rental, each car and driver must undergo ‘Speedy Rental Selection Tests’ before becoming operational. Quality, being the cornerstone of Speedy Rental services, is ensured in every mile.
+<br><br>
+With your safety and comfort in mind, Speedy Rental's makes car rental simplified for everyone.</p>
+            </div>
+        </div><br>
+        <div class="row justify-content-center"><br>
+            <div class="col-lg-10 text-center">
+                <h3 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">Our Vision</span></h3>
+                <p> From an innovative idea that took the car rental industry by storm, Speedy Rental's vision goes beyond providing car rental services in Karachi.
+<br><br>
+Speedy Rentals has set new standards of using technology to revolutionize traditional services. More than anything, we strive to inspire and facilitate more entrepreneurs to take part in this progress.</p>
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h6 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">Speedy Rentals </span>at OPEN Silicon Valley Annual Forum</h6>
+                <p> he Organization of Pakistani Entrepreneurs (OPEN) is a renowned network of professionals, investors, and entrepreneurs. The Silicon Valley OPEN annual forum promotes entrepreneurs and innovation for technological growth.
+<br><br>
+Attended by some influential government officials, investors, scientists, entrepreneurs, and representatives from leading tech companies like Google, Facebook, and Apple, Speedy Rental was honored to pitch at the summit and take one step closer to realize our vision. </p>
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h6 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">Speedy Rental's </span>Brand Ambassador</h6>
+                <p> In March 2022, Speedy Rental proudly to announced Mahira Khan as its first brand ambassador to represent its brand on a larger scale.
+<br><br>
+Mahira was listed as one of the most influential stars by Forbes and in BBC's list of 100 most influential women globally. Needless to say, Speedy Rental is proud to partner with an inspirational and influential personality who has always supported a greater cause.
+<br><br>
+We shall continue working towards making our mission and vision a reality, with your trust and our efforts. </p>
+            </div>
+        </div><br>
+        <div class="row mt-3">
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-headset text-secondary"></i>
+                    </div>
+                    <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-car text-secondary"></i>
+                    </div>
+                    <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                    </div>
+                    <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row mx-0">
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                    <div class="text-right">
+                        <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                        <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                        <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <div class="text-left">
+                        <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                        <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                    </div>
+                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="{% static 'img/banner-right.png' %}"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="{% static 'img/testimonial-1.jpg' %}" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="{% static 'img/testimonial-2.jpg' %}" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="{% static 'img/testimonial-3.jpg' %}" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="{% static 'img/testimonial-4.jpg' %}" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                {% for teams in teams %}
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="{% static 'img/team-1.jpg' %}" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">{{ teams.name }}</h4>
+                        <p class="m-0">{{teams.designation}}</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" target="blank" href="{{teams.twitter}}"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" target="_blank" href="{{teams.facebook}}"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" target="blank" href="{{teams.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+
+<!-- Vendor Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="owl-carousel vendor-carousel">
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-1.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-2.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-3.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-4.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-5.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-6.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-7.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-8.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Vendor End -->
+
+
+{% include 'includes/footer.html' %}
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static '' %}js/main.js"></script>
+</body>
+
+</html>
